@@ -14,7 +14,7 @@ document.querySelectorAll('.faq-item button').forEach(btn=>{
 document.querySelectorAll('[data-year]').forEach(el=>el.textContent=new Date().getFullYear());
 
 /* Add the confirmed contact numbers here later, digits only for WhatsApp. */
-const CONTACT={phone:'',whatsapp:''};
+const CONTACT={phone:'+27217533565',whatsapp:''};
 document.querySelectorAll('[data-call]').forEach(link=>{
   if(CONTACT.phone){link.href='tel:'+CONTACT.phone;}else{link.href='/contact#contact-details';link.title='Telephone number to be confirmed';}
 });

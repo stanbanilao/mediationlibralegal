@@ -44,3 +44,32 @@ h2{font-size:clamp(2.1rem,4vw,4rem);letter-spacing:-.025em}h3{font-size:1.45rem}
 /* Libra brand logo */
 .brand-logo{display:block;height:46px;width:auto;max-width:100%}.site-footer .brand-logo{height:52px}.brand:has(.brand-logo){min-width:0;gap:0}
 @media (max-width:640px){.brand-logo{height:38px}.site-footer .brand-logo{height:44px}}
+
+/* Dark header, aligned with Libra family */
+.site-header{background:rgba(8,26,34,.97);border-bottom:1px solid rgba(124,198,219,.22)}
+.site-header .nav-links>a:not(.button){color:#e6edf0}.site-header .nav-links>a:not(.button):hover,.site-header .nav-links>a.active{color:var(--gold)}
+.site-header .menu-button span{background:#f4f2eb}
+.site-header .brand-logo{height:54px}
+@media (max-width:900px){.site-header .nav-links{background:#081a22;border-bottom-color:rgba(124,198,219,.22)}}
+@media (max-width:640px){.site-header .brand-logo{height:42px}}
+/* Assessment form */
+.form-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:42px;box-shadow:0 18px 50px rgba(8,26,34,.06);max-width:900px;margin:0 auto}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px 20px;margin-top:26px}
+.field{display:flex;flex-direction:column;gap:7px}.field.full{grid-column:1/-1}
+.field label,.field legend{font-size:.82rem;font-weight:700;color:var(--ink)}
+.field input,.field select,.field textarea{font:inherit;font-size:.95rem;padding:13px 14px;border:1px solid #d3dbde;border-radius:12px;background:#fbfaf6;color:var(--ink)}
+.field input:focus,.field select:focus,.field textarea:focus{outline:none;border-color:var(--gold);box-shadow:0 0 0 3px rgba(124,198,219,.25);background:#fff}
+fieldset.field{border:0;padding:0;margin:0}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chips label{font-weight:600;font-size:.84rem;border:1px solid #d3dbde;border-radius:999px;padding:9px 14px;cursor:pointer;background:#fbfaf6;color:#33464d}
+.chips input{position:absolute;opacity:0;pointer-events:none}
+.chips label:has(input:checked){background:var(--deep);color:#fff;border-color:var(--deep)}
+.consent{grid-column:1/-1;display:flex;gap:12px;align-items:flex-start;font-size:.84rem;color:var(--muted)}
+.consent input{margin-top:4px;accent-color:#2a7f95}
+.form-actions{display:flex;flex-wrap:wrap;gap:16px;align-items:center;margin-top:28px}
+.form-actions .button{border:0;font-family:inherit;font-size:1rem}
+.form-error{color:#b3412e;font-weight:700;font-size:.88rem;display:none;margin-top:14px}
+.form-success{display:none;text-align:center;padding:20px 0}
+.form-success .tick{width:62px;height:62px;border-radius:50%;margin:0 auto 18px;background:rgba(124,198,219,.18);color:#2a7f95;display:flex;align-items:center;justify-content:center;font-size:28px}
+.is-sent form{display:none}.is-sent .form-success{display:block}
+@media (max-width:640px){.form-grid{grid-template-columns:1fr}.form-card{padding:26px 20px}}
